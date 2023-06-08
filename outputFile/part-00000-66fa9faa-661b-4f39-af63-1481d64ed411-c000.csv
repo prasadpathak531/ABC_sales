@@ -1,0 +1,11 @@
+Region,Product,Date,UnitsSold,Revenue,unit_price,cost_price,profit_percent
+North,Product B,1/1/2022,150,2000,13.33,11.2,15.98
+South,Product A,1/1/2022,120,1500,12.5,11.0,12.0
+West,Product A,1/1/2022,90,1200,13.33,11.0,17.48
+West,Product B,1/1/2022,200,2500,12.5,11.2,10.4
+North,Product A,1/2/2022,110,1200,10.91,11.0,-0.82
+North,Product B,1/2/2022,140,1800,12.86,11.2,12.91
+South,Product A,1/2/2022,130,1600,12.31,11.0,10.64
+South,Product B,1/2/2022,70,900,12.86,11.2,12.91
+West,Product A,1/2/2022,100,1300,13.0,11.0,15.38
+West,Product B,1/2/2022,190,2400,12.63,11.2,11.32

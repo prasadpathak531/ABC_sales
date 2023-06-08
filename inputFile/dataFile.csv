@@ -1,0 +1,14 @@
+﻿Region,Product,Date,UnitsSold,Revenue
+North,Product A,1/1/2022,100,
+North,Product B,1/1/2022,150,2000
+South,Product A,1/1/2022,120,1500
+South,Product B,NULL,80,1000
+West,Product A,1/1/2022,90,1200
+West,Product B,1/1/2022,200,2500
+North,Product A,1/2/2022,110,1200
+North,Product B,1/2/2022,140,1800
+South,Product A,1/2/2022,130,1600
+South,Product B,1/2/2022,70,900
+West,Product A,1/2/2022,100,1300
+West,Product B,1/2/2022,190,2400
+North,NULL,NULL,100,NULL
