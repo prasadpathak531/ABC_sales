@@ -13,7 +13,7 @@ RUN pip install pyspark psycopg2 boto3
 WORKDIR /app
 
 # Copy your Python script to the working directory
-COPY ETLcode.ipynb .
+COPY etl.psycopg2 .
 
 # Run your Python script
-CMD ["python", "ETLcode.ipynb"]
+CMD ["python", "etl.py"]
