@@ -4,12 +4,16 @@ from datetime import datetime
 import psycopg2
 import boto3
 
+s3_client = boto3.client('s3')
+bucket_name = 'savecsvintoprasads3bucket'
+folder_name = 'inputfile'
+file_name = 'dataFile.csv' 
+file_path = '/tmp/' + file_name
+s3_key = folder_name + '/' + file_name
+s3_client.download_file(bucket_name, s3_key, file_path)
 
-spark = SparkSession.builder.appName("FileProcessing").getOrCreate()
-
-folder_path = "D:\Custom_assignment\Data"
-
-df = spark.read.format("csv").option("header","true").option("inferSchema","true").load(folder_path)
+spark = SparkSession.builder.appName("FileProcessing").getOrCreate()  
+df = spark.read.format("csv").option("header","true").option("inferSchema","true").load('s3a://savecsvintoprasads3bucket.s3.amazonaws.com/inputfile/dataFile.csv')
 df.show()
 
 df.describe().show()
@@ -93,6 +97,3 @@ for row in df_values:
     conn.commit()
 conn.close()
 
-s3_client = boto3.client('s3')
-
-df.write.csv('D:/Custom_assignment/Data/outputFile', header=True,mode='append')

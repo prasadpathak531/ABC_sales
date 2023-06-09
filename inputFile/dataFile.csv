@@ -1,5 +1,5 @@
 ﻿Region,Product,Date,UnitsSold,Revenue
-North,Product A,1/1/2022,100,
+North,Product A,1/1/2022,100,NULL
 North,Product B,1/1/2022,150,2000
 South,Product A,1/1/2022,120,1500
 South,Product B,NULL,80,1000
